@@ -10,7 +10,12 @@
 	"observability": {
 		"enabled": true
 	},
-
+  "routes": [
+		{ 
+			"pattern": "ip.truthsquad.party",
+			"custom_domain": true
+		}
+	],
 	"secrets_store_secrets": [
 		{ 
 			"binding": "API_KEY",
