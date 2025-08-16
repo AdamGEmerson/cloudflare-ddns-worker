@@ -9,7 +9,31 @@
 	"compatibility_date": "2025-08-16",
 	"observability": {
 		"enabled": true
-	}
+	},
+
+	"secrets_store_secrets": [
+		{ 
+			"binding": "API_KEY",
+			"store_id": "bee1517a195a4dffb1654a4125697906",
+			"secret_name": "truthsquad-dns-edit-api"
+		},
+		{
+			"binding": "RECORD_ID",
+			"store_id": "bee1517a195a4dffb1654a4125697906",
+			"secret_name": "truthsquad-record"
+		},
+		{
+			"binding": "ZONE_ID",
+			"store_id": "bee1517a195a4dffb1654a4125697906",
+			"secret_name": "truthsquad-zone"
+		},
+		{
+			"binding": "SECRET_KEY",
+			"store_id": "bee1517a195a4dffb1654a4125697906",
+			"secret_name": "truthsquad-ddns-secret"
+		}
+	]
+	
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
